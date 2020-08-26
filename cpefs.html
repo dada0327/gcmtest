@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cpefs模式预报产品</title>
+    <link rel="stylesheet" href="../plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="../plugin/bstable/css/bootstrap-table.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet"  href="../css/table.css"/>
+
+</head>
+<body class="content-cpfb">
+<div class="news_main">
+    <div class="l_left news_left">
+
+        <ul class="nav nav-tabs" id="myTab" >
+            <li class="active"><a href="#home">云宏观场</a></li>
+            <li><a href="#profile">云微观场</a></li>
+            <li><a href="#messages">垂直结构</a></li>
+            <li><a href="#settings">降水场</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="qb">
+                <div style="float: left;margin-right: 10px;">起报时间：<input  onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:00'})" class="Wdate sjtxt"></div>
+                <ul class="qbsx common-bul">
+                    <li><span>08时</span></li>
+                    <li><span>20时</span></li>
+                </ul>
+            </div>
+            <h6>区域</h6>
+            <div class="qy">
+                <ul class="qyc common-bul">
+                    <li><span>东北</span></li>
+                    <li><span>华北</span></li>
+                    <li><span>中部</span></li>
+                    <li><span>东南</span></li>
+
+                    <li><span>西北东</span></li>
+                    <li><span>西北西</span></li>
+                    <li><span>西南东</span></li>
+                    <li><span>西南西</span></li>
+                </ul>
+            </div>
+            <h6>要素</h6>
+            <div class="tab-pane active" id="home">
+                <div class="ys">
+                    <ul class="ysw ysw-common">
+                        <li><span>云带</span></li>
+                        <li><span>垂直累积液态水</span></li>
+                        <li><span>垂直累积过冷水</span></li>
+                        <li><span>云顶温度</span></li>
+                        <li><span>云顶高度</span></li>
+                        <li><span>云底高度</span></li>
+                        <li><span>云底温度</span></li>
+                        <li><span>雷达反射率</span></li>
+                        <li><span>雷达组合反射率</span></li>
+                        <li><span>相对湿度</span></li>
+                    </ul>
+                </div>
+                <h6>层次  <label style="margin-left: 10px;"><a>播放</a></label><label style="margin-left: 10px;"><a>向上</a></label><label style="margin-left: 10px;"><a>向下</a></label></h6>
+                <div class="ccys">
+                    <ul class="cc ccwd-content">
+                        <li><span>850hPa</span></li>
+                        <li><span>800hPa</span></li>
+                        <li><span>750hPa</span></li>
+                        <li><span>700hPa</span></li>
+                        <li><span>650hPa</span></li>
+
+                        <li><span>600hPa</span></li>
+                        <li><span>550hPa</span></li>
+                        <li><span>500hPa</span></li>
+                        <li><span>450hPa</span></li>
+                        <li><span>400hPa</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane" id="profile">
+                <div class="ys">
+                    <ul class="ysw ysw-common">
+                        <li><span>总水成物场+风场+温度</span></li>
+                        <li><span>云水比含水量</span></li>
+                        <li><span>雨水比含水量</span></li>
+                        <li><span>冰晶比含水量</span></li>
+                        <li><span>雪比含水量</span></li>
+                        <li><span>霰比含水量</span></li>
+                        <li><span>冰晶数浓度</span></li>
+                        <li><span>雨滴数浓度</span></li>
+                        <li><span>雪数浓度</span></li>
+                        <li><span>霰数浓度</span></li>
+                    </ul>
+                </div>
+                <h6>层次  <label style="margin-left: 10px;"><a>播放</a></label><label style="margin-left: 10px;"><a>向上</a></label><label style="margin-left: 10px;"><a>向下</a></label></h6>
+                <div class="ccys">
+                    <ul class="cc ccwd-content">
+                        <li><span>850hPa</span></li>
+                        <li><span>800hPa</span></li>
+                        <li><span>750hPa</span></li>
+                        <li><span>700hPa</span></li>
+                        <li><span>650hPa</span></li>
+
+                        <li><span>600hPa</span></li>
+                        <li><span>550hPa</span></li>
+                        <li><span>500hPa</span></li>
+                        <li><span>450hPa</span></li>
+                        <li><span>400hPa</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane" id="messages">
+                <div class="ysz">
+                    <ul class="yszz yszz-common">
+                        <li><span>Qc,Ni,T垂直剖面</span></li>
+                        <li><span>Qs+Qg,Qr,H垂直剖面</span></li>
+                    </ul>
+                </div>
+                <h6>纬度值  <label style="margin-left: 10px;"><a>播放</a></label><label style="margin-left: 10px;"><a>向上</a></label><label style="margin-left: 10px;"><a>向下</a></label></h6>
+                <div class="wdys">
+                    <ul class="wd ccwd-content">
+                        <li><span>22°</span></li>
+                        <li><span>24°</span></li>
+                        <li><span>26°</span></li>
+                        <li><span>28°</span></li>
+                        <li><span>30°</span></li>
+
+                        <li><span>32°</span></li>
+                        <li><span>34°</span></li>
+                        <li><span>36°</span></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane" id="settings">
+                <div class="ys">
+                    <ul class="yszz yszz-common">
+                        <li><span>逐小时降水</span></li>
+                        <li><span>3小时降水</span></li>
+                        <li><span>6小时降水</span></li>
+                        <li><span>12小时降水</span></li>
+                        <li><span>24小时降水</span></li>
+                    </ul>
+                </div>
+            </div>
+            <h6>时效
+                <span class="sxs"><i class="fa fa-step-backward fa-lg"></i></span>
+                <span class="sxs"><i class="fa fa-play-circle-o fa-lg"></i></span>
+                <span class="sxs"><i class="fa fa-step-forward fa-lg"></i></span>
+            </h6>
+            <div class="sxys">
+                <ul class="sx-content common-bul">
+                    <li><span>01</span></li>
+                    <li><span>02</span></li>
+                    <li><span>03</span></li>
+                    <li><span>04</span></li>
+                    <li><span>05</span></li>
+                    <li><span>06</span></li>
+                    <li><span>07</span></li>
+                    <li><span>08</span></li>
+                    <li><span>09</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                    <li><span>13</span></li>
+                    <li><span>14</span></li>
+                    <li><span>15</span></li>
+                    <li><span>16</span></li>
+                    <li><span>17</span></li>
+                    <li><span>18</span></li>
+                    <li><span>19</span></li>
+                    <li><span>20</span></li>
+                    <li><span>21</span></li>
+                    <li><span>22</span></li>
+                    <li><span>23</span></li>
+                    <li><span>24</span></li>
+                    <li><span>25</span></li>
+                    <li><span>26</span></li>
+                    <li><span>27</span></li>
+                    <li><span>28</span></li>
+                    <li><span>29</span></li>
+                    <li><span>30</span></li>
+                    <li><span>31</span></li>
+                    <li><span>32</span></li>
+                    <li><span>33</span></li>
+                    <li><span>34</span></li>
+                    <li><span>35</span></li>
+                    <li><span>36</span></li>
+                    <li><span>37</span></li>
+                    <li><span>38</span></li>
+                    <li><span>39</span></li>
+                    <li><span>40</span></li>
+                    <li><span>41</span></li>
+                    <li><span>42</span></li>
+                    <li><span>43</span></li>
+                    <li><span>44</span></li>
+                    <li><span>45</span></li>
+                    <li><span>46</span></li>
+                    <li><span>47</span></li>
+                    <li><span>48</span></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="l_left news_right">
+        <div style="width: 75%;height: 810px;float:left;">
+            <img style="width:100%;height:810px;" src="../images/rycpfb/Guip_wmc_grapes_cpas_cband_achn_nnn_0300_202008060800.png"/>
+        </div>
+        <!--相关产品-->
+        <div style="width: 23%;margin-left:20px;height: 810px;float: left;">
+            <div id="boysoft"  style="border:1px solid #cccccc;text-align:left; HEIGHT: 340px;WIDTH:95%;margin-left:10px;">
+                <table  style="background-color: #FCFCFC;text-align:left;"  border=0 cellpadding=0 cellspacing=0 height=300 width=100% >
+                    <tr>
+                        <td>
+                            <table  border="0" style="width:100%;height:33px;background-image:url(../images/bk/ksll.png)" cellpadding=0 cellspacing=0>
+                                <tr>
+                                    <td style="text-align:left;color:white;font-size:14px;padding-left:8px;" ><b>相关产品</b></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <table  cellpadding=0 cellspacing=0 height=130 width="99%" style="">
+                                <tr>
+                                    <td  height="30px;" style="color:#444444;padding-left:3px;text-align:left;font-size: 14px;">对应时次卫星云特征参量产品</td>
+                                </tr>
+                                <tr>
+                                    <td height="30px;" style="padding-left:15px;text-align:left;"><a href="#" >光学厚度</a></td>
+                                </tr>
+                                <tr>
+                                    <td  height="30px;" style="padding-left:15px;text-align:left;"><a href="#" >云顶温度</a></td>
+                                </tr>
+                                <tr>
+                                    <td  height="30px;" style="padding-left:15px;text-align:left;"><a href="#" >云顶高度</a></td>
+                                </tr>
+                                <tr>
+                                    <td  height="30px;" style="padding-left:15px;text-align:left;"><a href="#" >有效粒子半径</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height=65 width="100%">
+                            <table  border=0 cellpadding=0 cellspacing=0 height=130 width="99%" style="">
+                                <tr>
+                                    <td height="30px;"  style="color:#444444;padding-left:3px;text-align:left;font-size: 14px;">对应时次GRAPES_CAMS模式产品</td>
+                                </tr>
+                                <tr>
+                                    <td height="30px;"  style="padding-left:15px;text-align:left;"><a href="#"  onclick="showImg('cband3')" >云带</a></td>
+                                </tr>
+                                <tr>
+                                    <td  height="30px;" style="padding-left:15px;text-align:left;"><a href="#" onclick="showImg('ctt3')">云顶温度</a></td>
+                                </tr>
+                                <tr>
+                                    <td height="30px;"  style="padding-left:15px;text-align:left;"><a href="#" onclick="showImg('cth3')">云顶高度</a></td>
+                                </tr>
+                                <tr>
+                                    <td height="30px;"  style="padding-left:15px;text-align:left;"><a href="#" onclick="showImg('rain33')">3小时降水</a></td>
+                                </tr>
+                            </table>
+                </table>
+            </div><!--相关产品end-->
+
+        </div>
+
+
+
+    </div>
+    <div class="clear"></div>
+
+</div>
+<script src="../js/jquery/jQuery-2.2.0.min.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../plugin/bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugin/bstable/js/bootstrap-table.js"></script>
+<script src="../plugin/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="../plugin/layer_v2.1/layer/layer.js"></script>
+<script>
+    $(function () {
+        $('#myTab a:first').tab('show');
+    })
+    $('#myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>
+</body>
+</html>
